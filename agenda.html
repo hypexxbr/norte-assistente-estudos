@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Agenda e matérias — Norte</title>
+<meta name="description" content="Provas, trabalhos e avisos ordenados por data, com filtro por tipo e busca.">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script src="assets/js/tailwind-config.js"></script>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body id="top" class="bg-bg font-sans leading-relaxed text-tx">
+
+<a class="absolute -left-[999px] bg-sf p-2 focus:left-4 focus:top-4 focus:z-20" href="#main">Pular para o conteúdo</a>
+<header class="site z-[11] border-b border-bd bg-sf">
+<div class="mx-auto flex max-w-[1100px] flex-wrap items-center gap-x-6 gap-y-2 px-5 py-3">
+<a href="index.html" class="mr-auto text-pr" aria-label="Norte, página inicial"><svg class="h-10 w-auto" viewBox="0 0 202 66" role="img" aria-label="Logo Norte" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+<defs><linearGradient id="lg" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#B0176E"/><stop offset="1" stop-color="#FF4FA3"/></linearGradient></defs>
+<g transform="translate(0,10)">
+<path d="M6 48V8l26 40V8"/><circle cx="62" cy="28" r="19" stroke-width="7"/>
+<path d="M62 12l8 16H54z" fill="url(#lg)" stroke="url(#lg)" stroke-width="2"/>
+<path d="M62 44l-8-16h16z" fill="currentColor" stroke-width="2"/>
+<path d="M96 48V8h12a11 11 0 0 1 0 22H96M108 30l10 18"/>
+<path d="M126 8h30M141 8v40"/><path d="M141 8V-6" stroke="url(#lg)" stroke-linecap="butt"/>
+<path d="M194 8h-22v40h22M172 28h18"/></g></svg></a>
+<nav aria-label="Principal" class="flex flex-wrap gap-x-5 gap-y-1 font-semibold">
+<a class="text-tx no-underline hover:underline" href="index.html">Início</a><a class="text-tx no-underline hover:underline underline decoration-2 underline-offset-8 text-pr" href="agenda.html" aria-current="page">Agenda</a><a class="text-tx no-underline hover:underline" href="assistente.html">Assistente</a><a class="text-tx no-underline hover:underline" href="como-funciona.html">Como funciona</a><a class="text-tx no-underline hover:underline" href="recursos.html">Recursos</a><a class="text-tx no-underline hover:underline" href="contraste.html">Contraste</a><a class="text-tx no-underline hover:underline" href="contato.html">Contato</a>
+</nav>
+<a class="btn btn-sm" href="entrar.html">Entrar</a>
+<button class="btn btn-line btn-sm" id="a11yBtn" aria-expanded="false" aria-controls="a11y">Acessibilidade</button>
+</div>
+<div id="a11y" role="group" aria-label="Opções de acessibilidade" hidden class="absolute right-5 top-full grid w-[min(300px,calc(100vw-2.5rem))] gap-3 rounded-2xl border border-bd bg-sf p-4 shadow-2xl [&[hidden]]:hidden">
+<div class="flex flex-wrap items-center gap-2"><strong>Tema</strong><button class="btn btn-line btn-sm" data-theme-set="light">Claro</button><button class="btn btn-line btn-sm" data-theme-set="dark">Escuro</button></div>
+<div class="flex flex-wrap items-center gap-2"><strong>Fonte</strong><button class="btn btn-line btn-sm" id="fMinus" aria-label="Diminuir fonte">A−</button><button class="btn btn-line btn-sm" id="fPlus" aria-label="Aumentar fonte">A+</button><button class="btn btn-line btn-sm" id="fReset">Padrão</button></div>
+<div class="flex items-center gap-2"><input type="checkbox" id="mot" class="h-5 w-5"><label for="mot">Reduzir animações</label></div>
+</div>
+</header>
+<main id="main">
+
+
+<div class="hero-bg rounded-b-[28px] px-5 py-14"><div class="mx-auto max-w-[1100px]">
+<p class="mb-2 font-bold uppercase tracking-widest text-white/90">Agenda</p>
+<h1 class="mb-3 max-w-[20ch] text-[clamp(2rem,5vw,3.2rem)] font-extrabold leading-tight">Agenda e matérias</h1>
+<p class="max-w-[56ch] text-lg">Tudo o que vence nos próximos dias, ordenado por data. Filtre por tipo ou pesquise por matéria.</p>
+</div></div>
+<div class="mx-auto max-w-[1100px] px-5">
+<section class="py-10" aria-labelledby="hAg">
+<h2 id="hAg" class="mb-4 text-3xl font-bold">Seus prazos</h2>
+<div class="mb-4 flex flex-wrap items-end gap-3">
+<div role="tablist" aria-label="Filtrar por tipo" id="tabs" class="flex flex-wrap gap-2">
+<button class="tab" role="tab" aria-selected="true" data-k="todos">Todos</button><button class="tab" role="tab" aria-selected="false" data-k="prova">Provas</button><button class="tab" role="tab" aria-selected="false" data-k="trabalho">Trabalhos</button><button class="tab" role="tab" aria-selected="false" data-k="aviso">Avisos</button></div>
+<div class="min-w-[240px] flex-1"><label class="lbl" for="q">Pesquisar por matéria ou título</label><input class="inp" id="q" type="search" placeholder="Ex.: banco de dados"></div>
+</div>
+<p id="count" role="status" class="mb-3"></p>
+<div class="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-4" id="list"></div>
+<h3 class="mb-3 mt-10 text-2xl font-bold">Minhas matérias</h3>
+<div class="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-4" id="subs"></div>
+<p class="mt-8">Prefere perguntar? <a class="font-semibold text-pr" href="assistente.html">Fale com o assistente →</a></p>
+</section></div>
+
+</main>
+
+<footer class="mt-8 border-t border-bd bg-sf"><div class="mx-auto grid max-w-[1100px] gap-6 px-5 py-8 text-mu md:grid-cols-3">
+<div><strong class="text-tx">Norte</strong><p>Projeto acadêmico de Desenvolvimento de Interfaces, com dados fictícios. Não é um produto oficial do CEUB.</p></div>
+<nav aria-label="Rodapé" class="grid gap-1"><strong class="text-tx">Páginas</strong>
+<a class="text-pr" href="index.html">Início</a><a class="text-pr" href="agenda.html">Agenda</a><a class="text-pr" href="assistente.html">Assistente</a><a class="text-pr" href="como-funciona.html">Como funciona</a><a class="text-pr" href="recursos.html">Recursos</a><a class="text-pr" href="contraste.html">Contraste</a><a class="text-pr" href="contato.html">Contato</a><a class="text-pr" href="entrar.html">Entrar</a></nav>
+<div><strong class="text-tx">Acessibilidade</strong><p>Tema claro e escuro, fonte ajustável, animações reduzíveis e navegação por teclado, seguindo o WCAG 2.1 AA.</p><a class="text-pr" href="#top">Voltar ao topo</a></div>
+</div></footer>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

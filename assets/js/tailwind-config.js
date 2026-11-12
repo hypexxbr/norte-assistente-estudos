@@ -1,0 +1,1 @@
+tailwind.config={theme:{extend:{colors:{bg:'var(--bg)',sf:'var(--sf)',tx:'var(--tx)',mu:'var(--mu)',pr:'var(--pr)',bd:'var(--bd)',am:'var(--am)'},backgroundImage:{brand:'linear-gradient(120deg,#4A1685,#B0176E)'},fontFamily:{sans:['"Segoe UI"','system-ui','-apple-system','Roboto','sans-serif']}}}}
