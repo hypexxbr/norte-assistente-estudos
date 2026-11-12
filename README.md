@@ -29,10 +29,4 @@ assets/
 
 Tema claro e escuro, fonte ajustável, opção de reduzir animações, link para pular ao conteúdo, foco visível e contraste seguindo o WCAG 2.1 AA. As preferências ficam salvas no navegador.
 
-## Como publicar no GitHub Pages
-
-1. Envie todos os arquivos para a raiz do repositório.
-2. Em **Settings > Pages**, escolha **Deploy from a branch**, branch `main`, pasta `/ (root)`.
-3. Aguarde alguns minutos e acesse `https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/`.
-
 > Projeto acadêmico. Não é um produto oficial do CEUB.
