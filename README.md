@@ -2,11 +2,6 @@
 
 Protótipo acadêmico de um assistente de estudos que reúne provas, trabalhos e avisos em uma lista só e responde no chat o que entregar primeiro. Projeto final de Desenvolvimento de Interfaces. Todos os dados são fictícios e nada é enviado a servidores.
 
-## Como abrir
-
-1. Extraia a pasta inteira (não abra os arquivos de dentro do .zip).
-2. Dê dois cliques em `index.html`. É preciso internet, porque o Tailwind e as fontes vêm de CDN.
-
 ## Páginas
 
 | Página | Arquivo | Função |
