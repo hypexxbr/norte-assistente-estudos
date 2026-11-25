@@ -1,1 +1,15 @@
-tailwind.config={theme:{extend:{colors:{bg:'var(--bg)',sf:'var(--sf)',tx:'var(--tx)',mu:'var(--mu)',pr:'var(--pr)',bd:'var(--bd)',am:'var(--am)'},backgroundImage:{brand:'linear-gradient(120deg,#4A1685,#B0176E)'},fontFamily:{sans:['"Segoe UI"','system-ui','-apple-system','Roboto','sans-serif']}}}}
+/* Norte | configuração do Tailwind (CDN). As cores apontam para variáveis de assets/css/style.css, então o tema claro/escuro funciona sozinho. */
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        bg: 'var(--bg)', sf: 'var(--sf)', inp: 'var(--inp)', tx: 'var(--tx)', mu: 'var(--mu)',
+        pr: 'var(--pr)', onpr: 'var(--onpr)', am: 'var(--am)', fl: 'var(--fl)'
+      },
+      fontFamily: {
+        sans: ['"IBM Plex Sans"', 'system-ui', 'sans-serif'],
+        display: ['Fraunces', 'Georgia', 'serif']
+      }
+    }
+  }
+};

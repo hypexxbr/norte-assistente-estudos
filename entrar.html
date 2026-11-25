@@ -3,68 +3,42 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Entrar — Norte</title>
+<title>Entrar | Norte</title>
 <meta name="description" content="Login simulado do Norte. Nenhuma senha é enviada ou guardada.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com/3.4.17"></script>
 <script src="assets/js/tailwind-config.js"></script>
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body id="top" class="bg-bg font-sans leading-relaxed text-tx">
-
-<a class="absolute -left-[999px] bg-sf p-2 focus:left-4 focus:top-4 focus:z-20" href="#main">Pular para o conteúdo</a>
-<header class="site z-[11] border-b border-bd bg-sf">
-<div class="mx-auto flex max-w-[1100px] flex-wrap items-center gap-x-6 gap-y-2 px-5 py-3">
-<a href="index.html" class="mr-auto text-pr" aria-label="Norte, página inicial"><svg class="h-10 w-auto" viewBox="0 0 202 66" role="img" aria-label="Logo Norte" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
-<defs><linearGradient id="lg" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#B0176E"/><stop offset="1" stop-color="#FF4FA3"/></linearGradient></defs>
-<g transform="translate(0,10)">
-<path d="M6 48V8l26 40V8"/><circle cx="62" cy="28" r="19" stroke-width="7"/>
-<path d="M62 12l8 16H54z" fill="url(#lg)" stroke="url(#lg)" stroke-width="2"/>
-<path d="M62 44l-8-16h16z" fill="currentColor" stroke-width="2"/>
-<path d="M96 48V8h12a11 11 0 0 1 0 22H96M108 30l10 18"/>
-<path d="M126 8h30M141 8v40"/><path d="M141 8V-6" stroke="url(#lg)" stroke-linecap="butt"/>
-<path d="M194 8h-22v40h22M172 28h18"/></g></svg></a>
-<nav aria-label="Principal" class="flex flex-wrap gap-x-5 gap-y-1 font-semibold">
-<a class="text-tx no-underline hover:underline" href="index.html">Início</a><a class="text-tx no-underline hover:underline" href="agenda.html">Agenda</a><a class="text-tx no-underline hover:underline" href="assistente.html">Assistente</a><a class="text-tx no-underline hover:underline" href="como-funciona.html">Como funciona</a><a class="text-tx no-underline hover:underline" href="recursos.html">Recursos</a><a class="text-tx no-underline hover:underline" href="contraste.html">Contraste</a><a class="text-tx no-underline hover:underline" href="contato.html">Contato</a>
-</nav>
-<a class="btn btn-sm" href="entrar.html" aria-current="page">Entrar</a>
-<button class="btn btn-line btn-sm" id="a11yBtn" aria-expanded="false" aria-controls="a11y">Acessibilidade</button>
+<body id="topo" class="bg-bg font-sans leading-relaxed text-tx">
+<a class="absolute -left-[999px] z-20 bg-inp p-2 focus:left-4 focus:top-4" href="#main">Pular para o conteúdo</a>
+<header class="sticky top-0 z-[11] border-b-2 border-tx bg-bg">
+<div class="mx-auto flex max-w-[1080px] flex-wrap items-center gap-x-6 gap-y-2 px-5 py-3">
+<a href="index.html" class="mr-auto flex items-center gap-2 font-display text-[1.7rem] font-extrabold leading-none text-tx no-underline" aria-label="Norte, página inicial"><svg class="h-8 w-8" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="16" fill="none" stroke="currentColor" stroke-width="4"/><path class="f1" d="M20 7l6 13h-12z"/><path class="f3" d="M20 33l-6-13h12z"/></svg>Norte</a>
+<nav aria-label="Principal" class="flex flex-wrap gap-x-5 gap-y-1"><a class="font-semibold no-underline hover:underline text-tx" href="index.html">Início</a><a class="font-semibold no-underline hover:underline text-tx" href="agenda.html">Agenda</a><a class="font-semibold no-underline hover:underline text-tx" href="assistente.html">Assistente</a><a class="font-semibold no-underline hover:underline text-tx" href="como-funciona.html">Como funciona</a><a class="font-semibold no-underline hover:underline text-tx" href="recursos.html">Recursos</a><a class="font-semibold no-underline hover:underline text-tx" href="contraste.html">Contraste</a><a class="font-semibold no-underline hover:underline text-tx" href="contato.html">Contato</a></nav>
+<a class="inline-block cursor-pointer border-2 border-tx bg-pr px-4 py-2 font-semibold text-onpr no-underline hover:bg-tx hover:text-bg" href="entrar.html" aria-current="page">Entrar</a>
+<button class="inline-block cursor-pointer border-2 border-tx bg-bg px-4 py-2 font-semibold text-tx no-underline hover:bg-fl hover:text-[#3B2A2F]" id="a11yBtn" aria-expanded="false" aria-controls="a11y">Acessibilidade</button>
 </div>
-<div id="a11y" role="group" aria-label="Opções de acessibilidade" hidden class="absolute right-5 top-full grid w-[min(300px,calc(100vw-2.5rem))] gap-3 rounded-2xl border border-bd bg-sf p-4 shadow-2xl [&[hidden]]:hidden">
-<div class="flex flex-wrap items-center gap-2"><strong>Tema</strong><button class="btn btn-line btn-sm" data-theme-set="light">Claro</button><button class="btn btn-line btn-sm" data-theme-set="dark">Escuro</button></div>
-<div class="flex flex-wrap items-center gap-2"><strong>Fonte</strong><button class="btn btn-line btn-sm" id="fMinus" aria-label="Diminuir fonte">A−</button><button class="btn btn-line btn-sm" id="fPlus" aria-label="Aumentar fonte">A+</button><button class="btn btn-line btn-sm" id="fReset">Padrão</button></div>
-<div class="flex items-center gap-2"><input type="checkbox" id="mot" class="h-5 w-5"><label for="mot">Reduzir animações</label></div>
+<div id="a11y" role="group" aria-label="Opções de acessibilidade" hidden class="absolute right-5 top-full grid w-[min(310px,calc(100vw-2.5rem))] gap-3 border-2 border-tx bg-sf p-4">
+<div class="flex flex-wrap items-center gap-2"><strong>Tema</strong><button class="inline-block cursor-pointer border-2 border-tx bg-bg px-4 py-2 font-semibold text-tx no-underline hover:bg-fl hover:text-[#3B2A2F]" data-theme-set="light">Claro</button><button class="inline-block cursor-pointer border-2 border-tx bg-bg px-4 py-2 font-semibold text-tx no-underline hover:bg-fl hover:text-[#3B2A2F]" data-theme-set="dark">Escuro</button></div>
+<div class="flex flex-wrap items-center gap-2"><strong>Fonte</strong><button class="inline-block cursor-pointer border-2 border-tx bg-bg px-4 py-2 font-semibold text-tx no-underline hover:bg-fl hover:text-[#3B2A2F]" id="fMinus" aria-label="Diminuir fonte">A-</button><button class="inline-block cursor-pointer border-2 border-tx bg-bg px-4 py-2 font-semibold text-tx no-underline hover:bg-fl hover:text-[#3B2A2F]" id="fPlus" aria-label="Aumentar fonte">A+</button><button class="inline-block cursor-pointer border-2 border-tx bg-bg px-4 py-2 font-semibold text-tx no-underline hover:bg-fl hover:text-[#3B2A2F]" id="fReset">Padrão</button></div>
+<div class="flex items-center gap-2"><input type="checkbox" id="ul" class="h-5 w-5"><label for="ul">Sublinhar todos os links</label></div>
 </div>
 </header>
 <main id="main">
-
-
-<div class="hero-bg rounded-b-[28px] px-5 py-14"><div class="mx-auto max-w-[1100px]">
-<p class="mb-2 font-bold uppercase tracking-widest text-white/90">Espaço Aluno</p>
-<h1 class="mb-3 max-w-[20ch] text-[clamp(2rem,5vw,3.2rem)] font-extrabold leading-tight">Entrar</h1>
-<p class="max-w-[56ch] text-lg">Esta tela simula o acesso ao Espaço Aluno. Nenhuma senha é enviada ou guardada: o protótipo só valida o formato dos campos.</p>
-</div></div>
-<div class="mx-auto max-w-[1100px] px-5">
-<section class="grid items-start gap-8 py-12 md:grid-cols-2" aria-labelledby="hLogin">
-<div class="reveal"><h2 id="hLogin" class="mb-3 text-3xl font-bold">Acesse sua conta</h2>
-<ul class="grid gap-3 text-mu">
-<li class="flex gap-3"><span class="badge shrink-0">✓</span><span>Veja provas, trabalhos e avisos de todas as matérias.</span></li>
-<li class="flex gap-3"><span class="badge shrink-0">✓</span><span>Pergunte ao assistente o que entregar primeiro.</span></li>
-<li class="flex gap-3"><span class="badge shrink-0">✓</span><span>Seus dados são fictícios e nada sai do navegador.</span></li></ul></div>
-<div class="card grid gap-4 p-6 shadow-xl reveal" role="form" aria-label="Login">
-<div><label class="lbl" for="em">E-mail institucional</label><input class="inp" id="em" type="email" autocomplete="username" placeholder="nome@sempreceub.com"></div>
-<div><label class="lbl" for="pw">Senha</label><input class="inp" id="pw" type="password" autocomplete="current-password" aria-describedby="pwh"><small id="pwh" class="text-mu">Mínimo de 6 caracteres.</small></div>
-<button class="btn" id="go">Entrar no protótipo</button>
-<div class="msg" id="lmsg" role="status"></div></div>
-</section></div>
-
+<div class="mx-auto max-w-[1080px] px-5 py-12"><p class="mb-2 text-sm font-semibold uppercase tracking-[.12em] text-am">Espaço Aluno</p><h1 class="mb-4 font-display text-[clamp(2.2rem,5vw,3.6rem)] font-extrabold leading-[1.05]">Entrar</h1><p class="max-w-[46ch] text-xl">Esta tela simula o acesso ao Espaço Aluno. Nenhuma senha é enviada ou guardada, o protótipo só confere o formato dos campos.</p></div>
+<section class="border-t-2 border-tx py-12" aria-labelledby="hLg"><div class="mx-auto max-w-[1080px] px-5 grid items-start gap-10 md:grid-cols-2">
+<div><h2 id="hLg" class="mb-3 font-display text-[clamp(1.7rem,3.5vw,2.4rem)] font-extrabold leading-tight">Acesse sua conta</h2><ul class="grid gap-3 text-mu"><li>Veja provas, trabalhos e avisos de todas as matérias.</li><li>Pergunte ao assistente o que entregar primeiro.</li><li>Seus dados são fictícios e nada sai do navegador.</li></ul>
+<p class="mt-6">Depois de entrar, abra a <a class="font-semibold text-pr underline" href="agenda.html">agenda</a> ou o <a class="font-semibold text-pr underline" href="assistente.html">assistente</a>.</p></div>
+<div class="border-2 border-tx bg-sf p-5 grid gap-4" role="form" aria-label="Login"><div><label class="mb-1 block font-semibold" for="em">E-mail institucional</label><input class="w-full border-2 border-tx bg-inp px-3 py-2.5 text-tx" id="em" type="email" autocomplete="username" placeholder="nome@sempreceub.com"></div>
+<div><label class="mb-1 block font-semibold" for="pw">Senha</label><input class="w-full border-2 border-tx bg-inp px-3 py-2.5 text-tx" id="pw" type="password" autocomplete="current-password" aria-describedby="pwh"><small id="pwh" class="text-mu">Mínimo de 6 caracteres.</small></div>
+<button class="inline-block cursor-pointer border-2 border-tx bg-pr px-4 py-2 font-semibold text-onpr no-underline hover:bg-tx hover:text-bg" id="go">Entrar no protótipo</button><div class="min-h-6 font-semibold" id="lmsg" role="status"></div></div></div></section>
 </main>
-
-<footer class="mt-8 border-t border-bd bg-sf"><div class="mx-auto grid max-w-[1100px] gap-6 px-5 py-8 text-mu md:grid-cols-3">
-<div><strong class="text-tx">Norte</strong><p>Projeto acadêmico de Desenvolvimento de Interfaces, com dados fictícios. Não é um produto oficial do CEUB.</p></div>
-<nav aria-label="Rodapé" class="grid gap-1"><strong class="text-tx">Páginas</strong>
-<a class="text-pr" href="index.html">Início</a><a class="text-pr" href="agenda.html">Agenda</a><a class="text-pr" href="assistente.html">Assistente</a><a class="text-pr" href="como-funciona.html">Como funciona</a><a class="text-pr" href="recursos.html">Recursos</a><a class="text-pr" href="contraste.html">Contraste</a><a class="text-pr" href="contato.html">Contato</a><a class="text-pr" href="entrar.html">Entrar</a></nav>
-<div><strong class="text-tx">Acessibilidade</strong><p>Tema claro e escuro, fonte ajustável, animações reduzíveis e navegação por teclado, seguindo o WCAG 2.1 AA.</p><a class="text-pr" href="#top">Voltar ao topo</a></div>
+<footer class="border-t-2 border-tx bg-sf"><div class="mx-auto grid max-w-[1080px] gap-8 px-5 py-8 text-mu md:grid-cols-3">
+<div><strong class="font-display text-xl text-tx">Norte</strong><p>Projeto acadêmico de Desenvolvimento de Interfaces, com dados fictícios. Não é um produto oficial do CEUB.</p></div>
+<nav aria-label="Rodapé" class="grid gap-1"><strong class="text-tx">Páginas</strong><a class="font-semibold text-pr underline" href="index.html">Início</a><a class="font-semibold text-pr underline" href="agenda.html">Agenda</a><a class="font-semibold text-pr underline" href="assistente.html">Assistente</a><a class="font-semibold text-pr underline" href="como-funciona.html">Como funciona</a><a class="font-semibold text-pr underline" href="recursos.html">Recursos</a><a class="font-semibold text-pr underline" href="contraste.html">Contraste</a><a class="font-semibold text-pr underline" href="contato.html">Contato</a><a class="font-semibold text-pr underline" href="entrar.html">Entrar</a></nav>
+<div><strong class="text-tx">Acessibilidade</strong><p>Tema claro e escuro, fonte ajustável, links sublinhados e nenhuma animação. Contraste conferido pelo WCAG 2.1 AA.</p><a class="font-semibold text-pr underline" href="#topo">Voltar ao topo</a></div>
 </div></footer>
 <script src="assets/js/app.js"></script>
 </body>
